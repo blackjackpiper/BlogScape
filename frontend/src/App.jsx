@@ -21,8 +21,10 @@ function App() {
     } else {
       localStorage.removeItem("token");
     }
+  if (activeTab === "public") {
     fetchPublicBlogs();
-  }, [token]);
+  }
+  }, [token,activeTab]);
 
   const fetchBlogs = async () => {
     try {
