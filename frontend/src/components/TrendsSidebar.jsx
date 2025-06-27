@@ -11,7 +11,8 @@ export default function TrendsSidebar() {
       setLoading(true);
       setError("");
       try {
-        const res = await axios.get("http://localhost:8000/trends");
+        const API = import.meta.env.VITE_API_URL;
+        const res = await axios.get(`${API}/trends`);
         const trendList = res.data?.trends || [];
         setTrends(trendList);
       } catch (err) {
