@@ -1,0 +1,243 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f6f8fa;
+}
+
+/* Reusable Container */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Blog Items */
+.blog-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+.private-blog {
+  background-color: #e8f5e9;
+  border-left: 5px solid #2e7d32;
+}
+
+/* ✅ Modern Public Blog Card Style */
+.public-blog {
+  background-color: #f6f0fa;
+  border-left: 4px solid #7b1fa2;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: auto;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+
+
+.public-blog h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+
+}
+.public-blog-grid {
+  column-count: 2;
+  column-gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+
+.public-blog-grid .blog-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .public-blog-grid {
+    column-count: 1;
+  }
+}
+
+
+.author {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.like-section {
+  display: flex;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+/* Like Button */
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 6px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Centered Public Blog Layout */
+.centered-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ✅ NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d1b2a;
+  padding: 1rem 2rem;
+  
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  color: #f1f1f1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+}
+
+.navbar-buttons button {
+  background-color: #1b263b;
+  color: #f1f1f1;
+  margin-left: 10px;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-buttons button:hover {
+  background-color: #415a77;
+}
+
+/* Full page layout */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f6f8fa;
+}
+
+/* Flex layout for content below navbar */
+.content-layout {
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* ✅ Left section: BlogForm + BlogList */
+.left-content {
+  flex: 2.5;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ✅ Right section: Sidebar */
+.right-sidebar {
+  flex: 1;
+  width: 300px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  background-color: #f0f4f8;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.trend-sidebar-container {
+  flex: 1;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  background-color: #f8f8f8;
+  border-left: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.my-blogs-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  gap: 2rem;
+}
+
+/* LEFT section: form + blogs */
+.blog-section {
+  flex: 3;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.similar-blogs {
+  background-color: #f4f0fc;
+  border-left: 4px solid #7b1fa2;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+.similar-blogs h4 {
+  margin-bottom: 0.5rem;
+}
+.similar-blogs ul {
+  padding-left: 1rem;
+}
