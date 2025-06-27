@@ -15,13 +15,14 @@ function App() {
   const [activeTab, setActiveTab] = useState("myBlogs");
 
   useEffect(() => {
+    console.log("Active tab is:", activeTab);
     if (token) {
       localStorage.setItem("token", token);
       fetchBlogs();
     } else {
       localStorage.removeItem("token");
     }
-  if (activeTab === "public") {
+  if (activeTab === "publicBlogs") {
     fetchPublicBlogs();
   }
   }, [token,activeTab]);
