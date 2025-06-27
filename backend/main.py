@@ -34,7 +34,6 @@ security = HTTPBearer()
 # SERPAPI Configuration
 SERPAPI_KEY = os.getenv("SERPAPI_KEY")
 TRENDS_API_URL = "https://serpapi.com/search.json"
-print("🔐 Loaded SERPAPI_KEY:", os.getenv("SERPAPI_KEY"))
 
 # ✅ TRENDING ROUTE FIXED
 @app.get("/trends")
