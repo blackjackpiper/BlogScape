@@ -65,7 +65,16 @@ export default function BlogList({
           },
         }
       );
-      fetchBlogs(); // ✅ Refresh like count immediately
+      if (isPublic) {
+      // If public page, update publicBlogs locally
+      const updated = blogs.map((blog) =>
+        blog.id === id
+          ? { ...blog, likes: (blog.likes ?? 0) + 1, likers: [...(blog.likers || []), userEmail] }
+          : blog
+      );
+      }
+      else{
+      fetchBlogs(); }// ✅ Refresh like count immediately
     } catch (err) {
       console.error("Error liking blog", err);
     }
