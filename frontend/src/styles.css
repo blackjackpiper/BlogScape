@@ -1,11 +1,10 @@
 
-body {
+/*body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color:  #0d1b2a;
+  background-color: #f6f8fa;
 }
 
-/* Reusable Container */
 .container {
   max-width: 700px;
   margin: 40px auto;
@@ -37,7 +36,6 @@ button:hover {
   background-color: #0056b3;
 }
 
-/* Blog Items */
 .blog-item {
   border: 1px solid #ddd;
   padding: 1rem;
@@ -50,7 +48,6 @@ button:hover {
   border-left: 5px solid #2e7d32;
 }
 
-/* ✅ Modern Public Blog Card Style */
 .public-blog {
   background-color: #f6f0fa;
   border-left: 4px solid #7b1fa2;
@@ -108,7 +105,6 @@ button:hover {
   font-size: 0.9rem;
 }
 
-/* Like Button */
 .like-button {
   background: none;
   border: none;
@@ -119,7 +115,6 @@ button:hover {
   align-items: center;
 }
 
-/* Centered Public Blog Layout */
 .centered-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -129,7 +124,6 @@ button:hover {
   align-items: center;
 }
 
-/* ✅ NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -165,15 +159,13 @@ button:hover {
   background-color: #415a77;
 }
 
-/* Full page layout */
 .main-layout {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f6f8fa;
+  background-color: #0d1b2a;
 }
 
-/* Flex layout for content below navbar */
 .content-layout {
   display: flex;
   flex: 1;
@@ -181,7 +173,6 @@ button:hover {
   gap: 2rem;
 }
 
-/* ✅ Left section: BlogForm + BlogList */
 .left-content {
   flex: 2.5;
   max-width: 1000px;
@@ -190,7 +181,6 @@ button:hover {
   gap: 2rem;
 }
 
-/* ✅ Right section: Sidebar */
 .right-sidebar {
   flex: 1;
   width: 300px;
@@ -219,7 +209,6 @@ button:hover {
   gap: 2rem;
 }
 
-/* LEFT section: form + blogs */
 .blog-section {
   flex: 3;
   background-color: white;
@@ -241,3 +230,19 @@ button:hover {
 .similar-blogs ul {
   padding-left: 1rem;
 }
+
+
+
+
+.container {
+  background-color: #f1f3f8;
+}
+
+.blog-section {
+  background-color: #f1f3f8;
+}
+
+.right-sidebar {
+  background-color: #dde4ed;
+}
+*/
