@@ -14,6 +14,7 @@ from database import users_collection, blogs_collection
 
 # Load environment variables
 load_dotenv()
+origins = os.getenv("ALLOWED_ORIGINS", "").split(",")
 
 app = FastAPI()
 router = APIRouter()
@@ -21,7 +22,7 @@ router = APIRouter()
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # frontend URL
+    allow_origins=origins,  # frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
