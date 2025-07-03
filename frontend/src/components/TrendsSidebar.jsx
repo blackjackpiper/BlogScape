@@ -45,8 +45,12 @@ export default function TrendsSidebar() {
             rel="noopener noreferrer"
             className="block bg-blue-50 hover:bg-blue-100 transition-colors duration-200 p-3 rounded-lg shadow hover:shadow-md"
           >
+            <ul>
+              <li>
             <p className="text-sm font-medium text-blue-800">{trend.title}</p>
             <p className="text-xs text-gray-500">Traffic: {trend.traffic}</p>
+                </li>
+            </ul>
           </a>
         ))}
       </div>
